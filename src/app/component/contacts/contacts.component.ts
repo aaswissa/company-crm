@@ -28,7 +28,7 @@ export class ContactsComponent implements OnInit {
       this.contactCaching = this.contacts = _.sortBy(contactsDataArg, ['name']);
       this.contactLength = this.contacts.length;
     });
-    this.headerTitle = ' Contact';
+    this.headerTitle = '  Contact';
     this.headerIcon = 'fas fa-envelope';
   }
 
