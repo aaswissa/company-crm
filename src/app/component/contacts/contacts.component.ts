@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { Contact } from '../../models/contact';
 import { ContactsService } from '../../services/contacts.service';
 import { registerLocaleData } from '@angular/common';
@@ -9,13 +9,15 @@ import * as _ from 'lodash';
   templateUrl: './contacts.component.html',
   styleUrls: ['./contacts.component.css']
 })
+
 export class ContactsComponent implements OnInit {
 
   contacts: Array<Contact>;
   contactCaching: Array<Contact>;
   contactLength: number;
   searchInput: string;
-  
+  headerTitle: string;
+  headerIcon: string;
 
 
   constructor(public contactServiceProperty:ContactsService) { }
@@ -26,6 +28,8 @@ export class ContactsComponent implements OnInit {
       this.contactCaching = this.contacts = _.sortBy(contactsDataArg, ['name']);
       this.contactLength = this.contacts.length;
     });
+    this.headerTitle = ' Contact';
+    this.headerIcon = 'fas fa-envelope';
   }
 
   onKeyupSearch(){
