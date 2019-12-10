@@ -1,0 +1,30 @@
+[
+    {
+        "name":"Moshe Levi",
+        "email": "moshe@yahoo.com",
+        "birthday":"1974-02-14",
+        "phone":["0549487744", "039795544"],
+        "avatar": "moshe.png"
+    },
+    {
+        "name":"Avi Cohen",
+        "email": "AVI@gmail.com",
+        "birthday":"1974-02-14",
+        "phone":["0525484844"],
+        "avatar": "avi.png"
+    },
+    {
+        "name":"Haim Bitton",
+        "email": "haim@walla.co.il",
+        "birthday":"1989-04-17",
+        "phone":[],
+        "avatar": "haim.png"
+    },
+    {
+        "name":"Shimi Shalom",
+        "email": "Shimi@Gmail.com",
+        "birthday":"1984-03-26",
+        "phone":["0541117744", "039655544"],
+        "avatar": "shimi.png"
+    }
+]
