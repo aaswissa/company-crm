@@ -18,6 +18,8 @@ export class PageHeaderComponent implements OnInit {
 
   ngOnInit() {
 
+    this.headerIcon = this.headerIcon ? this.headerIcon : 'fas fa-angle-double-up';
+
   }
 
 }
